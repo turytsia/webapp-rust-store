@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/webapp-rust-store/static/css/main.a18181a9.css",
-    "main.js": "/webapp-rust-store/static/js/main.c1c4e5fe.js",
+    "main.js": "/webapp-rust-store/static/js/main.e9be5ba2.js",
     "static/media/main.png": "/webapp-rust-store/static/media/main.5f13863cca996cc27d2e.png",
     "index.html": "/webapp-rust-store/index.html",
     "main.a18181a9.css.map": "/webapp-rust-store/static/css/main.a18181a9.css.map",
-    "main.c1c4e5fe.js.map": "/webapp-rust-store/static/js/main.c1c4e5fe.js.map"
+    "main.e9be5ba2.js.map": "/webapp-rust-store/static/js/main.e9be5ba2.js.map"
   },
   "entrypoints": [
     "static/css/main.a18181a9.css",
-    "static/js/main.c1c4e5fe.js"
+    "static/js/main.e9be5ba2.js"
   ]
 }
