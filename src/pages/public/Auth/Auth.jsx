@@ -28,6 +28,7 @@ export default function Auth() {
         setError(response.message);
       } else {
         setError("");
+        localStorage.setItem('token',response.token)
         authContext.login();
         navigate("/");
       }

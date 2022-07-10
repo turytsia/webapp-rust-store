@@ -13,6 +13,9 @@ export default function AuthProvider(props) {
     if (cookie.get("token")) {
       setIsLoggedIn(true);
     }
+    if (localStorage.getItem("token")) {
+      setIsLoggedIn(true);
+    }
   };
 
   const onLogout = () => {

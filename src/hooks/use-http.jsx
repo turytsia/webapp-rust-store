@@ -9,7 +9,7 @@ export const request = async (url, method = "GET", body) => {
     method,
     headers: {
       "Content-Type": "application/json",
-      token: cookie.get("token"),
+      token: cookie.get("token") || localStorage.getItem('token'),
     },
     credentials: "include",
     body: isFormData ? body : JSON.stringify(body),
