@@ -1,0 +1,27 @@
+.button {
+    border: 1px solid var(--color-red);
+    background-color: var(--color-red);
+    color: white;
+    width: 100%;
+    font-size: 16;
+    font-weight: 600;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.button:active {
+    background-color: var(--color-red) !important;
+    color: white !important;
+}
+
+.button--reversed {
+    border: 1px solid var(--color-red) !important;
+    color: var(--color-red) !important;
+    background-color: #fff !important;
+}
+
+.button:disabled {
+    background-color: rgb(194, 194, 194);
+    cursor: not-allowed;
+    border: none;
+}

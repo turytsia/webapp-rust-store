@@ -1,0 +1,12 @@
+.image-input{
+    margin-bottom: 20px;
+}
+.image-input img {
+    height: 100%;
+}
+
+.image-input__preview {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}

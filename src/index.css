@@ -1,0 +1,94 @@
+:root {
+    --font-title: 'Staatliches', cursive;
+    --font-p: 'Hind Madurai', sans-serif;
+    --color-red: rgb(196, 61, 61);
+    --color-gray: rgb(236, 236, 236);
+}
+
+body {
+    font-family: var(--font-p);
+    overflow-y: scroll;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+section {
+    margin: 60px 0 20px;
+}
+
+aside {
+    width: 350px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+
+.slide-in-enter-active {
+    animation: modalOpen .2s ease-in forwards;
+}
+
+.slide-in-exit-active {
+    animation: modalClose .2s ease-out forwards;
+}
+
+@keyframes modalOpen {
+    0% {
+        transform: translate(50%, -50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(50%, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes modalClose {
+    0% {
+        opacity: 1;
+        transform: translate(50%, 0);
+    }
+    100% {
+        transform: translate(50%, -50px);
+        opacity: 0;
+    }
+}
+
+.contact__list{
+    display: flex;
+    padding: 10px;
+}
+
+
+.contact__list a{
+    color: #aaaaaa;
+    transition: .2s;
+}
+
+.contact__list a:hover{
+    color: var(--color-red);
+}
+
+.contact__list li{
+    margin-right: 15px;
+    font-size: 18px;
+}

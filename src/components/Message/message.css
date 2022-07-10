@@ -1,0 +1,24 @@
+.message {
+    color: white;
+    position: absolute;
+    background-color: rgba(196, 61, 61, .9);
+    padding: 5px 30px;
+    border-radius: 5px;
+    top: -60px;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    width: 50%;
+    transition: all .2s ease-out;
+    z-index: 10;
+}
+
+.message button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+}

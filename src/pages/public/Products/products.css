@@ -1,0 +1,24 @@
+.products__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.product-modal-delete{
+    overflow-y:auto !important;
+}
+
+.product-modal-delete__buttons {
+    display: flex;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.product-modal-delete__buttons button {
+    margin-right: 10px;
+}
+
+.product-modal-delete h2 {
+    color: var(--color-red);
+    font-size: 20px;
+}

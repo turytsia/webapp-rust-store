@@ -1,0 +1,37 @@
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-wrapper{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: scroll;
+    max-height: 90vh;
+}
+
+.modal-slide-enter{
+    opacity: 0;
+}
+
+.modal-slide-enter-active{
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.modal-slide-exit{
+    opacity: 1;
+}
+
+.modal-slide-exit-active{
+    opacity: 0;
+    transition: opacity .3s;
+}
