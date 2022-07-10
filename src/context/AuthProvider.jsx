@@ -9,11 +9,13 @@ export const AuthContext = createContext({
 
 export default function AuthProvider(props) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const onLogin = () => {
+  const onLogin = (token = "") => {
+    console.log(token);
     if (cookie.get("token")) {
       setIsLoggedIn(true);
     }
-    if (localStorage.getItem("token")) {
+    if (token) {
+      localStorage.setItem("token", token);
       setIsLoggedIn(true);
     }
   };
