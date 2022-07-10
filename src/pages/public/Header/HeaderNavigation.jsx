@@ -33,6 +33,15 @@ export default function HeaderNavigation(props) {
         <i className="fa-solid fa-circle-question"></i>
         FAQ
       </NavLink>
+      <NavLink
+        onClick={props.onClose}
+        className={(navData) =>
+          navData.isActive ? "header-navigation__active" : ""
+        }
+        to="/admin"
+      >
+        Admin
+      </NavLink>
     </>
   );
 }
